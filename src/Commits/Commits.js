@@ -30,10 +30,10 @@ function Commits() {
     
   return (
     <CommitStyles>
-      <HeaderStyles style={{ background: '#EFF2F6', marginBottom: '32px' }}>
-        <nav className="container">
-          <h1>
-            <Link to="/">Commit Viewer</Link>
+            <HeaderStyles style={{ background: '#EFF2F6', marginBottom: '32px' }}>     
+                <nav className="container">
+                    <h1>
+                        <Link to="/">Commit Viewer</Link>     
           </h1>
           <SearchInput />
         </nav>

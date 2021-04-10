@@ -1,4 +1,3 @@
-
 import './App.scss'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import { CommitsProvider } from './context/CommitsContext'
@@ -10,7 +9,7 @@ import Commits from './Commits/Commits'
 export default function App() {
   return (
     <CommitsProvider>
-      <Router>             
+      <Router>
         <Switch>
           <Route path="/" exact>
             <Home />
@@ -24,8 +23,8 @@ export default function App() {
           <Route path="/commits">
             <Commits />
           </Route>
-        </Switch>      
+        </Switch>
       </Router>
     </CommitsProvider>
-  );
+  )
 }

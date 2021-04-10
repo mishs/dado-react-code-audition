@@ -4,6 +4,7 @@ import axios from 'axios'
 import SearchInput from '../SearchInput/SearchInput'
 import { HeaderStyles } from '../components/HeaderStyles'
 import { CommitStyles } from './CommitStyles'
+import { CommitsContext } from '../context/CommitsContext'
 
 function Commits() {
   return (

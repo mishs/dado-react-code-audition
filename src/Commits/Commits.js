@@ -7,6 +7,27 @@ import { CommitStyles } from './CommitStyles'
 import { CommitsContext } from '../context/CommitsContext'
 
 function Commits() {
+    const { searchQuery }           = useContext(CommitsContext);
+    const [commits, setCommits]     = useState([]);
+    const [isLoading, setIsLoading] = useState(false);
+
+    useEffect(() => {   
+        if (searchQuery !== '') {
+            setIsLoading(true);
+
+            axios.get(`https://api.github.com/repos/${searchQuery}/commits?per_page=10`)
+            .then(response => {
+                setCommits(response.data);
+                console.log(response.data);
+                setIsLoading(false);
+            });
+        }
+
+        
+    },[searchQuery]);
+
+    console.log(commits)
+    
   return (
     <CommitStyles>
       <HeaderStyles style={{ background: '#EFF2F6', marginBottom: '32px' }}>

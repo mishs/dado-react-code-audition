@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import axios from 'axios'
 import SearchInput from '../SearchInput/SearchInput'
 import { HeaderStyles } from '../components/HeaderStyles'
 import { CommitStyles } from './CommitStyles'

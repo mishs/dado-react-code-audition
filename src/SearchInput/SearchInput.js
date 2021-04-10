@@ -14,7 +14,7 @@ function SearchInput(props) {
 
     return (
         <SearchInputStyles>
-            <form>
+            <form onSubmit={handleSubmit}>
               <div>
                 <input type="text"
                 placeholder="Eg. facebook/react"

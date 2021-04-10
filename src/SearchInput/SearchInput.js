@@ -1,4 +1,4 @@
-import React, { useState, useContext } from 'react'
+import React, { useState } from 'react'
 import { FaSearch } from 'react-icons/fa'
 import { SearchInputStyles } from './SearchInputStyles'
 import { useHistory } from 'react-router-dom';

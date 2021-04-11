@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { down } from 'styled-breakpoints'
 
 export const SearchInputStyles = styled.div`
     form {
@@ -6,6 +7,10 @@ export const SearchInputStyles = styled.div`
         justify-content: center;
         max-width: 920px;
         margin: 0 auto;
+
+        ${down('xs')} {
+            flex-direction: column;
+        }
 
         .search-wrapper {            
             display: flex;

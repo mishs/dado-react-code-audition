@@ -19,15 +19,19 @@ function SearchInput(props) {
     <SearchInputStyles>
       <form onSubmit={handleSubmit}>
         <div className="search-wrapper">
-          <FaSearch className="search-icon" />  
+          <FaSearch className="search-icon" />
           <input
             type="text"
-            placeholder={ searchQuery === '' ? "Eg. facebook/react" : searchQuery }
+            placeholder={
+              searchQuery === '' ? 'Eg. facebook/react' : searchQuery
+            }
             onChange={(e) => setQuery(e.target.value)}
           />
         </div>
 
-        <input type="submit" value="See commits 🚀" />
+        <input 
+            type="submit" 
+            value="See commits 🚀" />
       </form>
     </SearchInputStyles>
   )

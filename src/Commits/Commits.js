@@ -59,11 +59,11 @@ function Commits() {
                   <p>{commit.commit.message}</p>
                 </div>
 
-                  <Moment format="HH:mm DD/MM/YYYY">
-                      {commit.commit.author.date}
-                  </Moment>
-                </li>
-              ))
+                <Moment format="HH:mm DD/MM/YYYY">
+                  {commit.commit.author.date}
+                </Moment>
+              </li>
+            ))
           )}
         </ul>
       </div>

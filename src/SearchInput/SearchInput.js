@@ -19,7 +19,7 @@ function SearchInput(props) {
     <SearchInputStyles>
       <form onSubmit={handleSubmit}>
         <div className="search-wrapper">
-          <FaSearch />
+          <FaSearch className="search-icon" />  
           <input
             type="text"
             placeholder="Eg. facebook/react"

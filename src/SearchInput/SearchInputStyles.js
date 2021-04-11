@@ -14,19 +14,27 @@ export const SearchInputStyles = styled.div`
             flex: 1;
             margin-right: 16px;
             border-radius: 8px;
+            position: relative;
             
             svg {
                 padding: 16px;
                 fill: #29335C;
             }
 
-            input {
+            .search-icon {
+                position: absolute;
+            }
+
+            input[type="text"] {
                 border: none;
                 background: transparent;
                 font-size: 20px;
                 letter-spacing: -0.5px;
                 width: 100%;
                 height: 100%;
+                display: flex;
+                padding-left: 40px;
+                margin: auto 2px;
 
                 &::placeholder {
                     color: #B1B5C5;

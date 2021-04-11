@@ -32,7 +32,7 @@ function Commits() {
       <HeaderStyles style={{ background: '#EFF2F6', marginBottom: '32px' }}>
         <nav className="container">
           <h1>
-            <Link to="/">Commit Viewer</Link>
+            <Link to="/">CommitViewer</Link>
           </h1>
           <SearchInput value={searchQuery} />
         </nav>

@@ -7,7 +7,7 @@ function Header() {
         <HeaderStyles>     
             <nav>
                 <h1>
-                    <Link to="/">Commit Viewer</Link>     
+                    <Link to="/">CommitViewer</Link>     
                 </h1>            
                 <ul>
                     <li>

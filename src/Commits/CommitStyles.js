@@ -1,6 +1,10 @@
 import styled from 'styled-components';
+import { down } from 'styled-breakpoints'
 
 export const CommitStyles = styled.div`
+    min-width: 768px;
+    margin: auto;
+    
     nav {
         padding: 36px 0;
 
@@ -11,6 +15,13 @@ export const CommitStyles = styled.div`
         form {
             margin-right: 0;
         }
+
+        ${down('md')} {
+            display: flex;
+            flex-direction: column;
+            padding: 24px 0 16px;
+        }
+
     }
 
     h3 {
@@ -38,25 +49,40 @@ export const CommitStyles = styled.div`
             }
 
             > div {
-                display: flex;
+                display: grid;
+                grid-template-columns: 2fr 7fr;
+                grid-gap: 16px;
+                margin-bottom: 32px;
+                margin-right: 64px;
                 align-items: center;
+                flex: 8;
             }
 
             figure {
+                text-align: center;
                 img {
                     border-radius: 50%;
                     height: 60px;
                     width: 60px;
+                    margin-bottom: 4px;
                 }
 
                 figcaption {
                     font-size: 22px;
                     font-weight: 600;
                     letter-spacing: -0.55px;
+                    word-break: break-word;
+
+                    ${down('md')} {
+                        font-size: 16px;
+                        letter-spacing: -1.3px;
+                        word-break: break-word;
+                
+                    }
                 }
             }
 
-            p {
+            p, time {
                 font-size: 20px;
                 letter-spacing: -0.4px;
             }

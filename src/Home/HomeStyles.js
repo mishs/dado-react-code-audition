@@ -1,4 +1,5 @@
-import styled from "styled-components";
+import styled from 'styled-components'
+import { down } from 'styled-breakpoints'
 
 export const HomeStyles = styled.div`
     .hero {
@@ -6,12 +7,19 @@ export const HomeStyles = styled.div`
         max-width: 540px;
         margin: 0 auto 64px;
 
-        h2 {
+        h2 {                  
             font-size: 72px;
             color: #18214D;
             font-weight: 600;
+            line-height: 80px;
             letter-spacing: -3px;
             margin-bottom: 16px;
+
+            ${down('xs')} {
+                margin-top: 32px;
+                font-size: 56px;
+                line-height: 62px;
+            }
         }
 
         p {

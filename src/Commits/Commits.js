@@ -5,6 +5,7 @@ import SearchInput from '../SearchInput/SearchInput'
 import { HeaderStyles } from '../components/HeaderStyles'
 import { CommitStyles } from './CommitStyles'
 import { CommitsContext } from '../context/CommitsContext'
+import Moment from 'react-moment'
 
 function Commits() {
   const { searchQuery } = useContext(CommitsContext)
@@ -32,7 +33,7 @@ function Commits() {
       <HeaderStyles style={{ background: '#EFF2F6', marginBottom: '32px' }}>
         <nav className="container">
           <h1>
-            <Link to="/">Commit Viewer</Link>
+            <Link to="/">CommitViewer</Link>
           </h1>
           <SearchInput value={searchQuery} />
         </nav>
@@ -58,7 +59,9 @@ function Commits() {
                   <p>{commit.commit.message}</p>
                 </div>
 
-                <p>{commit.commit.author.date}</p>
+                <Moment format="HH:mm DD/MM/YYYY">
+                  {commit.commit.author.date}
+                </Moment>
               </li>
             ))
           )}

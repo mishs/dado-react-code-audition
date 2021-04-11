@@ -1,4 +1,5 @@
-import styled from 'styled-components';
+import styled from 'styled-components'
+import { down } from 'styled-breakpoints'
 
 export const HeaderStyles = styled.div`
     nav {
@@ -6,6 +7,11 @@ export const HeaderStyles = styled.div`
         justify-content: space-between;
         padding: 48px 0 64px;
         align-items: center;
+
+        ${down('xs')} {
+            flex-direction: column;
+            padding: 24px 0 16px;
+        }
     }
 
     h1, ul {
@@ -15,21 +21,29 @@ export const HeaderStyles = styled.div`
     h1 {
         a {
             text-decoration: none;
-            font-siex: 28px;
+            font-size: 28px;
             font-weight: 700;
             color: #18214D;
             letter-spacing: -0.6px;
         }
+
+        ${down('xs')} {
+            margin-bottom: 16px;
+        }
     }
 
     ul {
-        display: flex;
-        align-items: center;
         list-style: none;
         padding: 0;
+        display: flex;
+        align-items: center;
 
         li {
             margin-left: 64px;
+
+            ${down('xs')} {
+                margin-left: 32px;
+            }
 
             &:first-child {
                 margin-left: 0;
@@ -41,5 +55,5 @@ export const HeaderStyles = styled.div`
                 color: #000;
             }
         }
-    }     
+    }
 `

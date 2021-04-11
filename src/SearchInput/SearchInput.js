@@ -22,8 +22,7 @@ function SearchInput(props) {
           <FaSearch className="search-icon" />  
           <input
             type="text"
-            placeholder="Eg. facebook/react"
-            // value={}
+            placeholder={ searchQuery === '' ? "Eg. facebook/react" : searchQuery }
             onChange={(e) => setQuery(e.target.value)}
           />
         </div>

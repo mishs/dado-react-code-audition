@@ -32,8 +32,11 @@ export const SearchInputStyles = styled.div`
                     color: #B1B5C5;
                 }
 
-                &:focus {
-                    outline-color: #98a1ab;         
+                &:hover {
+                    outline-color: #98a1ab; 
+                    border: 2px solid #29335C;
+                    border-radius: 8px;  
+                    height: 58px;  
                 }
             }
         }

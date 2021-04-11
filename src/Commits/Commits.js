@@ -5,6 +5,7 @@ import SearchInput from '../SearchInput/SearchInput'
 import { HeaderStyles } from '../components/HeaderStyles'
 import { CommitStyles } from './CommitStyles'
 import { CommitsContext } from '../context/CommitsContext'
+import Moment from 'react-moment'
 
 function Commits() {
   const { searchQuery } = useContext(CommitsContext)
@@ -58,9 +59,11 @@ function Commits() {
                   <p>{commit.commit.message}</p>
                 </div>
 
-                <p>{commit.commit.author.date}</p>
-              </li>
-            ))
+                  <Moment format="HH:mm DD/MM/YYYY">
+                      {commit.commit.author.date}
+                  </Moment>
+                </li>
+              ))
           )}
         </ul>
       </div>

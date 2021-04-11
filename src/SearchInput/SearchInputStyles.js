@@ -16,6 +16,11 @@ export const SearchInputStyles = styled.div`
             border-radius: 8px;
             position: relative;
             
+            ${down('xs')} {
+                margin-right: 0;
+                margin-bottom: 24px;
+            }
+            
             svg {
                 padding: 16px;
                 fill: #29335C;

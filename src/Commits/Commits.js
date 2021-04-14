@@ -39,7 +39,7 @@ function Commits() {
         </nav>
       </HeaderStyles>
 
-      <div className="container">
+      <div className="containerBody">
         <h3>{searchQuery}</h3>
 
         <ul className="results">

@@ -20,7 +20,7 @@ export const SearchInputStyles = styled.div`
             margin-right: 16px;
             border-radius: 8px;
             position: relative;
-            
+
             ${down('xs')} {
                 margin-right: 0;
                 margin-bottom: 24px;
@@ -51,10 +51,8 @@ export const SearchInputStyles = styled.div`
                 }
 
                 &:hover {
-                    outline-color: #98a1ab; 
-                    border: 2px solid #29335C;
+                    outline-color: #29335C;; 
                     border-radius: 8px;  
-                    height: 58px;  
                 }
             }
         }

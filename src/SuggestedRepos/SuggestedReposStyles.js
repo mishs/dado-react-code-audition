@@ -15,7 +15,7 @@ export const SuggestedReposStyles = styled.div`
         margin-top: 24px;
 
         ${down('sm')} {
-            display: flex;
+            display: grid;
             flex-direction: column;
             margin: 10px 0;
             text-align: center;

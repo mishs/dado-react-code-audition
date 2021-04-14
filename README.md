@@ -21,7 +21,7 @@ GitHub Commits Explorer web app allowing users to explore code repositories and 
 ## Available Scripts
 
 Git clone.\
-> ```git clone https://github.com/mishs/github-finder.git```
+> ```https://github.com/mishs/dado-react-code-audition.git```
 
 
 In the project directory, you can run:

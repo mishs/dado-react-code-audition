@@ -1,8 +1,10 @@
-import React from 'react'
+import React, { useContext } from 'react'
+import { CommitsContext } from '../context/CommitsContext'
 import { SuggestedReposStyles } from './SuggestedReposStyles'
 import { useHistory } from 'react-router-dom';
 
 function SuggestedRepos() {
+    const { updateSearchQuery } = useContext(CommitsContext);
     const { push }              = useHistory();
 
     const repos = [
@@ -21,6 +23,7 @@ function SuggestedRepos() {
     ]
 
     function handleClick(title) {
+        updateSearchQuery(title);
         push('/commits');
     }
 

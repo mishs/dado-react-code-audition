@@ -7,7 +7,6 @@ export const CommitStyles = styled.div`
 
     .containerBody {
         width: 90%;
-        background-color: red;
         margin: auto;
     }
     

@@ -4,6 +4,12 @@ import { down } from 'styled-breakpoints'
 export const CommitStyles = styled.div`
     min-width: 768px;
     margin: auto;
+
+    .containerBody {
+        width: 90%;
+        background-color: red;
+        margin: auto;
+    }
     
     nav {
         padding: 36px 0;
@@ -72,14 +78,20 @@ export const CommitStyles = styled.div`
                     font-weight: 600;
                     letter-spacing: -0.55px;
                     word-break: break-word;
-
-                    ${down('md')} {
-                        font-size: 16px;
-                        letter-spacing: -1.3px;
-                        word-break: break-word;
-                
-                    }
                 }
+            }
+
+            p, time {
+                font-size: 20px;
+                letter-spacing: -0.4px;
+
+                ${down('md')} {
+                    font-size: 16px;
+                    letter-spacing: -1.3px;
+                    word-break: break-word;
+                
+                }
+            }
             }
 
             p, time {

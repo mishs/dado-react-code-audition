@@ -85,6 +85,7 @@ export const CommitStyles = styled.div`
 
                 ${down('md')} {
                     word-break: break-word;
+                    min-width: 250px;
                 }
             }
         }

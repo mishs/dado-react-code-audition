@@ -54,6 +54,10 @@ export const SearchInputStyles = styled.div`
                     outline-color: #29335C;; 
                     border-radius: 8px;  
                 }
+
+                ${down('sm')} {
+                    height: 58px;
+                }
             }
         }
 
